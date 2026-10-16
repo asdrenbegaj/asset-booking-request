@@ -9,11 +9,12 @@ what's due out, due back and overdue, and the reminder emails go out on their ow
 It was built by the I3 Digital Services Team at University Hospitals of Morecambe Bay NHS
 Foundation Trust and is **available free to NHS organisations on request**.
 
-<!-- Screenshots: use a DEV site with demo assets and made-up names -->
 | Book an asset |
 |---|
 | ![Booking screen](images/book-asset.png) | 
+
 | All bookings (admin) | 
+|---|
 | ![Admin view](images/all-bookings.png) |
 
 ## What it does
@@ -47,17 +48,17 @@ The setup guide takes about 30 minutes from import to a working app.
 
 The solution files are in a private repository. To get access:
 
-1. **[Open an access request](../../issues/new?template=request-access.yml)**. You'll need a GitHub account.
-2. We check the request, normally within a few working days.
-3. You receive a GitHub invitation to the private repository with **read** access to download the releases and setup guide.
+1. You'll need a GitHub account.
+2. **[Submit an access request](https://forms.cloud.microsoft/e/FBqkcKgg3k)**.
+3. We check the request, normally within a few working days.
+4. You receive a GitHub invitation to the private repository with **read** access to download the releases and setup guide.
 
-> Requests are public issues in this repository. Only include your name, role, organisation
-> and GitHub username; please don't add phone numbers, personal email addresses or any patient
-> information.
+> Submitting an access request will trigger an automated email to your mailbox. 
+> Please reply to this email with your GitHub username only so we can process
+> your request quicker.
 
 ## Terms
 
-<!-- Agree this wording with your Information Governance / legal team before publishing -->
 Provided free to NHS organisations for use within their own organisation, as is and without
 warranty. Please don't redistribute the solution files outside your organisation; point
 colleagues here instead. Each organisation is responsible for its own testing, DPIA and
