@@ -37,35 +37,40 @@ No patient data is stored. The lists hold assets, sites and staff bookings.
 
 ## How it's delivered
 
-Two unmanaged Power Platform solutions:
+Two Power Platform solutions, installed in this order:
 
 1. **Asset Booking Setup**: run-once flows that create the SharePoint lists, settings and permissions, and optionally migrate data from an older booking app
 2. **Asset Booking**: the app and six flows (confirmations, cancellations, reminders, lost-kit notices, archiving)
+
+Both come in two versions:
+
+| Version | For | Notes |
+|---|---|---|
+| **Managed** | Installing and using it as it is | Locked, so updates are a simple re-import. Usually approved from the request alone. |
+| **Unmanaged** | Adapting it for your organisation | Open to edit in Power Apps and Power Automate. Needs a quick NHSmail check (see below). |
 
 The setup guide takes about 30 minutes from import to a working app.
 
 ## Request access
 
-The solution files are in a private repository. To get access:
+The solution files are in private repositories. To get access:
 
-1. You'll need a GitHub account.
-2. **[Submit an access request](https://forms.cloud.microsoft/e/FBqkcKgg3k)**.
-3. We check the request, normally within a few working days.
-4. You receive a GitHub invitation to the private repository with **read** access to download the releases and setup guide.
+1. Sign in to GitHub (a free account is fine; you can register with your NHSmail address).
+2. **[Submit an access request](https://github.com/asdrenbegaj/asset-booking-request/issues/new?template=request-access.yml)** and choose the version you need.
+3. **For the unmanaged version only:** email **i3DigitalServicesTeam@mbhci.nhs.uk** from your **NHSmail** address, quoting your request number (e.g. *#12*). That's how we confirm you work for the NHS.
+4. We review requests, normally within a few working days.
+5. You'll receive a GitHub invitation by email. Accept it, then download the release files and setup guide from the repository's **Releases** page.
 
-> Submitting an access request will trigger an automated email to your mailbox. 
-> Please reply to this email with your GitHub username only so we can process
-> your request quicker.
+Requests are public, so please don't include email addresses, phone numbers or other personal details in them.
+
+The managed version is also shared in the NHS Power Platform Team on NHSmail.
 
 ## Terms
 
-Provided free to NHS organisations for use within their own organisation, as is and without
-warranty. Please don't redistribute the solution files outside your organisation; point
-colleagues here instead. Each organisation is responsible for its own testing, DPIA and
-deployment.
+Free for UK NHS organisations, under the [licence](LICENCE.md). In short: use it and adapt it within the UK NHS, keep the credit to UHMB/One LSC, don't sell it, and each organisation is responsible for its own testing, DPIA and deployment. The solution is provided as is, without warranty.
 
 ## Contact
 
-I3 Digital Services Team, University Hospitals of Morecambe Bay NHS Foundation Trust.
+I3 Digital Services Team, University Hospitals of Morecambe Bay NHS Foundation Trust: **i3DigitalServicesTeam@mbhci.nhs.uk**
 
-Questions: open an issue in this repository.
+General questions: [open an issue](https://github.com/asdrenbegaj/asset-booking-request/issues/new) in this repository.
