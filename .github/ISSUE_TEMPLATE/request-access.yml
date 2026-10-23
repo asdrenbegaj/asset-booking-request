@@ -1,0 +1,54 @@
+name: Request access to the solution
+description: For UK NHS organisations who want to install or adapt Asset Booking.
+title: "Access request"
+labels: ["access request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in **Asset Booking**.
+
+        **This request is public.** Anyone can read it, so please don't include email addresses, phone numbers or other personal details. We'll use your GitHub username to give you access.
+
+        - **Managed version:** install and use it as it is. We'll usually approve this from the request alone.
+        - **Unmanaged version:** adapt it for your organisation. After you submit, **email i3DigitalServicesTeam@mbhci.nhs.uk from your NHSmail address**, quoting your request number (for example *#12*). That's how we confirm you work for the NHS.
+
+        Once approved, you'll get a GitHub invitation to the private download area.
+  - type: dropdown
+    id: version
+    attributes:
+      label: Which version do you need?
+      options:
+        - "Managed: install and use it as it is"
+        - "Unmanaged: adapt it for my organisation"
+    validations:
+      required: true
+  - type: input
+    id: organisation
+    attributes:
+      label: NHS organisation
+      placeholder: e.g. Royal Example NHS Foundation Trust
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Your role (optional)
+      placeholder: e.g. Digital services, citizen developer
+  - type: textarea
+    id: use
+    attributes:
+      label: How do you plan to use it?
+      description: A sentence or two is plenty.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Please confirm
+      options:
+        - label: I work for, or on behalf of, a UK NHS organisation.
+          required: true
+        - label: I have read the licence (LICENCE.md in this repository) and agree to its terms.
+          required: true
+        - label: If I've asked for the unmanaged version, I'll email i3DigitalServicesTeam@mbhci.nhs.uk from my NHSmail address, quoting this request number.
